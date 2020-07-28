@@ -43,7 +43,7 @@ client.on('message', message =>{
         if(!args.length){
             return message.channel.send(`${message.author} You didn't type anything, retard.`)
         }
-        else if (args.content === 'love me'){
+        else if (args.content === 'loveme'){
             return message.channel.send("In your dreams, bitch.");
         }
         message.channel.send(`${args.slice(0).join(' ')}`);

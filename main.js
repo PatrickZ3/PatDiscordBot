@@ -40,10 +40,11 @@ client.on('message', message =>{
     }
 
     if(command === 'speak'){
-        if(!args.length== '0'){
+        String[] test = args.slice(0).join(' ');
+        if(!test.length== '0'){
             return message.channel.send(`${message.author} You didn't type anything, retard.`)
         }
-        else if (args[0] == "loveme"){
+        else if (test[0] == "loveme"){
             return message.channel.send("In your dreams, bitch.");
         }
         message.channel.send(`${args.slice(0).join(' ')}`);

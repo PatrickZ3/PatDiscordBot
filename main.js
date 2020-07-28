@@ -18,6 +18,7 @@ client.on('message', message =>{
     var rosekill = "https://imgur.com/a/dxjLAAc";
     var sun = "https://imgur.com/a/pBlxJG6";
     var nikita ="https://imgur.com/p86Mmkp";
+    var interesting = "https://imgur.com/2AFXgD8";
 
     if(command === 'hey'){
         message.channel.send('Fuck off!');
@@ -25,6 +26,10 @@ client.on('message', message =>{
 
     if(command === 'pi'){
         message.channel.send(pi);
+    }
+
+    if(command === 'interesting'){
+        message.channel.send(interesting);
     }
 
     if(command === 'sun'){

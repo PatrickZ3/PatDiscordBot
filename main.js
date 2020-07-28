@@ -49,6 +49,7 @@ client.on('message', message =>{
         }
         message.channel.send(`${args.slice(0).join(' ')}`);
     }
+    
     if(command === 'speak10'){
         if(!args.length){
             return message.channel.send(`${message.author} You didn't type anything so you expect me to type nothing 10 times?? retard.`)

@@ -46,7 +46,7 @@ client.on('message', message =>{
 
     if(command === 'speak'){
 
-        if(!args.length== '0'){
+        if(!args.length){
             return message.channel.send(`${message.author} You didn't type anything, retard.`)
         }
         else if (args.content == "loveme"){

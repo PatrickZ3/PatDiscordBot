@@ -72,6 +72,10 @@ client.on('message', message =>{
          message.channel.send(`${args.slice(0).join(' ')}`);
             }
     }
+
+    if(command === 'list'){
+        message.channel.send("hey, pi, interesting, sun, nikita, rosekill, speak, speak5, speak10");
+    }
 });
 
 client.login(process.env.token);
